@@ -1,0 +1,390 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------------------------------ */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.header__logo a {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo img {
+    display: flex;
+    width: 30%;
+    height: auto;
+}
+
+.header__menu {
+    margin-bottom: 20%;
+}
+
+.header__menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header__menu ul li a {
+    text-decoration: none;
+    color:pink;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* SECTION */
+
+#section__inicio {
+    margin-bottom: 700px;
+}
+
+.section__titulo {
+    font-size: xx-large;
+    margin-bottom: 20%;
+    text-align: center;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif
+}
+
+.section__lista {
+    margin-left: 10%;
+    display: grid;
+    gap: 20%;
+}
+
+.section__lista ul h5 {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.linea {
+    background-color: #CE0058;
+    width: 48px;
+    height: 4px;
+    margin: 10px 0px;
+    margin-top: 20px;
+}
+
+.section__lista__lista {
+    display: grid;
+    gap: 10%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: pink;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer__logo img {
+    width: 20%;
+    height: auto;
+}
+
+.footer__redes img {
+    width: 10%;
+    height: auto;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.footer__menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__redes img {
+    width: 35px;
+    height: auto;
+}
+
+/* Nosotros */
+
+.section__local img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.header__menu__nosotros {
+    margin-bottom: 5%;
+}
+
+.header__menu__nosotros ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header__menu__nosotros ul li a {
+    text-decoration: none;
+    color:pink;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#section__historia .section__historia__titulo {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+
+.section__historia__texto {
+    text-align: justify;
+    padding: 0 30px 0 30px;
+    margin-bottom: 5%;
+}
+
+#historia {
+    color: #CE0058;
+}
+
+#texto__subtitulo {
+    font-weight: bold;
+}
+
+#buenos {
+    color: #CE0058;
+}
+
+#precios {
+    color: #CE0058;
+}
+
+#vera {
+    color: #CE0058;
+}
+
+/* promociones */
+
+.section__titulo__promociones h3 {
+    text-align: center;
+    font-size: xx-large;
+    color: #CE0058;
+    font-weight: bold;
+    margin-bottom: 20%;
+}
+
+.section__promos {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__promos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__promos div img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.section__promos div h4 {
+    font-size: xx-large;
+    color: #CE0058;
+}
+
+.section__promos div p {
+    text-align: justify;
+    margin-bottom: 25%;
+    margin-top: 5%;
+    padding: 0 10% 0 10%;
+}
+
+.promociones__precios {
+    font-weight: bold;
+}
+
+/* responsive escritorio */
+
+/* inicio */
+
+@media (min-width: 1023px) {
+    .header__logo img{
+        width: 15%;
+        height: auto;
+    }
+
+    .header__menu {
+        margin-bottom: 10%;
+    }
+
+    .header__menu ul li a {
+        font-size: xx-large;
+    }
+    .header__menu ul li a:hover {
+        color: black;
+    }
+    /* section */
+    #section__inicio {
+        margin-bottom: 10%;
+    }
+    .section__titulo {
+        margin-bottom: 10%;
+    }
+    .section__titulo h1 {
+        font-size: xxx-large;
+    }
+    .section__lista {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 10% 0 10%;
+        gap: 200px;
+    }
+    .section__lista__lista div h5 {
+        font-size: xx-large;
+    }
+    .section__lista__lista li {
+        font-size: x-large;
+    }
+    #uno {
+        margin-top: 13.8%;  
+    }
+    /* footer */
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding-top: 5px;
+        padding-bottom: 1px;
+    
+    }
+    .footer__logo {
+        visibility: hidden;
+        width: 7%;
+        height: auto;
+    }
+    .footer__menu {
+        align-items: center;
+        margin-bottom: 0px;
+        gap: 25px;
+    }
+    .footer__menu a {
+        display: flex;
+        font-size: larger;
+    }
+    .footer__redes {
+        margin-right: 40px;
+        margin-left: 10px;
+    }
+
+    /* nosotros */
+
+    .header__menu__nosotros ul li a {
+        font-size: xx-large;
+    }
+
+    .header__menu__nosotros ul li a:hover {
+        color: black;
+    }
+
+    .section__nosotros {
+        display: flex;
+        padding-top: 3%;
+        background-color: rgb(219, 219, 219);
+    }
+
+    .section__local img {
+        width: 100%;
+        height: auto;
+        margin-left: 3%;
+    }
+
+    .section__local {
+        display: flex;
+    }
+
+    /* promociones */
+
+    .section__titulo__promociones h3 {
+        font-size: xxx-large;
+    }
+
+    .section__promos {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 50% 50%;
+        margin-top: -10%;
+    margin-left: 16%;
+    }
+    .section__promos div img {
+        width: 60%;
+        height: auto;
+    }
+
+    .section__promos div p {
+        font-family: sans-serif;
+        font-size: larger;
+        text-align: justify;
+    }
+
+}
+
